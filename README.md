@@ -16,7 +16,9 @@ security implementation and is only used to do the functions specified above.
 1. [`config.php`](https://github.com/kemoycampbell/blockBruteForceLogin/blob/master/config.php) - use to configure the database/ as well as developer localhost and production settings such as enableDebug,enable sandbox, maxAttempts and blockTime
 2. [`block.php`](https://github.com/kemoycampbell/blockBruteForceLogin/blob/master/block.php) - contains the instance of the `BlockBruteForce.php` and the config. This class does not require any changes.
 3. [`BlockBruteForce.php`](https://github.com/kemoycampbell/blockBruteForceLogin/blob/master/BlockBruteForce.php) - This is the class file and the core of the library
-4. [`kemoybrute_force_login_attempts.sql`](https://github.com/kemoycampbell/blockBruteForceLogin/blob/master/kemoybrute_force_login_attempts.sql) -  This is the sql for to generate the table need for the blockbruteforce. This file should NOT be modified. In additonal,there is no need to automatically upload this file unless necessary. The file is automatically uploaded when you included the 'autoload.php' in your project. If it failed to upload you may try manual but til then do not worry about it.
+4. [`autoload.php`](https://github.com/kemoycampbell/blockBruteForceLogin/blob/master/autoload.php) - include this on every pages you want to use the library as it will autoload the necessary dependencies.
+5. [`kemoybrute_force_login_attempts.sql`](https://github.com/kemoycampbell/blockBruteForceLogin/blob/master/kemoybrute_force_login_attempts.sql) -  This is the sql for to generate the table need for the blockbruteforce. This file should NOT be modified. In additonal,there is no need to automatically upload this file unless necessary. The file is automatically uploaded when you included the 'autoload.php' in your project. If it failed to upload you may try manual but til then do not worry about it.
+
 
 #Installation
 The most recommended way to install this library is using composer. 
