@@ -107,6 +107,11 @@ class BlockBruteForce
         }
     }
 
+    /**
+     * This method is use to set the debug flag. The parameter must be a boolean true or false
+     * @param $bool - either true or false
+     * @return \stdClass - return stdclass object if there are any error
+     */
     public function setEnableDebug($bool)
     {
         if(is_bool($bool)===true)
@@ -342,7 +347,7 @@ class BlockBruteForce
      * This method is used to update the number of attempts the user has made. We only use this method if the
      * user has made previous failed attempt. If the update was successful then true is return and false if nothing to update.
      * a stdclass is return if any errors occurs
-     * @param $username
+     * @param $username - the name of the user whose attempts to update
      * @return bool|\stdClass - return true if the update was successful, false if nothing was update and stdclass object if
      * any errors occurs
      */
@@ -583,7 +588,7 @@ class BlockBruteForce
     }
 
     /**This method takes the time of the last login attempts and returns the minutes elapse since the last login attempts
-     * @param $lastAttempt - the time of the last login attempts
+     * @param $lastAttempt- the time of the last login attempts
      * @return int|\stdClass - returns the minutes elapsed otherwise a stdclass detailing the error
      */
     public function getMinuteElapse($lastAttempt)
