@@ -1,8 +1,5 @@
 # blockBruteForceLogin
 
-
-![unstable](https://poser.pugx.org/alphayax/freebox_api_php/v/unstable)
-
 ![license](https://img.shields.io/packagist/l/alphayax/freebox_api_php.svg)
 
 BlockBruteForce light weight open source library that automatically prevent bruteforce login attempts on your website(s) login forms.
@@ -15,13 +12,24 @@ for x amount of time which is specified by you as well as return how many minute
 being said, this library is not meant to be use alone as the overall security to your application but incoprate with your existing
 security implementation and is only used to do the functions specified above.
 
-####Divisions, Installation, and Setting Up
+#Divisions
 1. [`config.php`](https://github.com/kemoycampbell/blockBruteForceLogin/blob/master/config.php) - use to configure the database/ as well as developer localhost and production settings such as enableDebug,enable sandbox, maxAttempts and blockTime
 2. [`block.php`](https://github.com/kemoycampbell/blockBruteForceLogin/blob/master/block.php) - contains the instance of the `BlockBruteForce.php` and the config. This class does not require any changes.
 3. [`BlockBruteForce.php`](https://github.com/kemoycampbell/blockBruteForceLogin/blob/master/BlockBruteForce.php) - This is the class file and the core of the library
 4. [`kemoybrute_force_login_attempts.sql`](https://github.com/kemoycampbell/blockBruteForceLogin/blob/master/kemoybrute_force_login_attempts.sql) -  This is the sql for to generate the table need for the blockbruteforce. This file should NOT be modified. In additonal,there is no need to automatically upload this file unless necessary. The file is automatically uploaded when you included the 'autoload.php' in your project. If it failed to upload you may try manual but til then do not worry about it.
 
+#Installation
+The most recommended way to install this library is using composer. 
+###### As a composer dependency:
+You can installed it by running the command in the terminal: 
 
+    composer require kemoycampbell/blockbruteforce'
+
+###### Alternative installations:
+You may also installed the project by click on the download as zip or run wget  or git clone
+
+#Getting Started | Setting up
+In order to get start with this library, you only need to navigate to the [`config.php`](https://github.com/kemoycampbell/blockBruteForceLogin/blob/master/config.php) file and edit the necessary fields which are pointed out with comments. No further changes is necessary in the other files.
 
 #Usage
 Below you will find a clear example of the usuage. Truth is with this library you will actually need 1 method namely the $block->isBlock($username) . However, out of courtesy I have set the functions in the class BlockBruteForce.php to public in case you desired to use it in a more complex way and build advance features.
