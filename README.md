@@ -1,5 +1,10 @@
 # blockBruteForceLogin
 
+
+![unstable](https://poser.pugx.org/alphayax/freebox_api_php/v/unstable)
+
+![license](https://img.shields.io/packagist/l/alphayax/freebox_api_php.svg)
+
 BlockBruteForce light weight open source library that automatically prevent bruteforce login attempts on your website(s) login forms.
 This library is design to be easily used and installed. The necessary dependencies such as the database(optionally) and table need
 for the blockbruteforce is automatically taken care of under the hood so there is no need for you to spend additional minutes setting
