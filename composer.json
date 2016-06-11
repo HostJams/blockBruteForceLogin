@@ -1,5 +1,5 @@
 {
-  "name": "kemoycampbell/BlockBruteForce",
+  "name": "kemoycampbell/blockbruteforce",
   "type": "library",
   "keywords": ["bruteforce","block brute force php login", "php login blocker","login","security","protection","block","verification","Auth",
     "failed attempts","login attempts","attempts","limit attempts plugin"],
