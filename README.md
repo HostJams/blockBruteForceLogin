@@ -75,10 +75,11 @@ Remember that it is important to call out to the library as follows:
 
     $block->someMethod();
     
-#TODO
-block a ip for certain numbers of days
-block an ip for certain number of months
-block an ip forever
+#TODO Features/Options
+#
+1. block a ip for certain numbers of days
+2. block an ip for certain number of months3
+3. block an ip forever
     
 #Contributing and goal
 
