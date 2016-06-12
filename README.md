@@ -79,5 +79,7 @@ It is my hope that this library will:
 
 BlockBruteForce is an open source, community-driven project. If you'd like to contribute, feel free to fork the project, play around with it, break it, improve it and lastly but not the least, submit pull requests.
 
+The class documents may be found at [`Document`](http://kemoycampbell.github.io/bruteforce_document/)
+
 
 
