@@ -40,27 +40,35 @@ Below you will find a clear example of the usuage. Truth is with this library yo
 
 include('autoload.php');//required
 
-//this is an example of how to check if a user is block
-$username = 'someone@example.com'
-$res = $block->isBlock($username);
+//assume you have some complex login check script here such as this pseduocode
 
-if($res===true)
-{
-  echo "No hacking allow here... That is right, No I am not letting you break what takes me hours and days to built!!";
-}
-else if($res===false)
-{
-  echo "This user is not block :-) "
-}
+get username and password
+hash the password
+perform select on database against the username and the hashed password
+if select failed:
+    //this is where the library come into play
 
-/**
-*You wont need to do this line if you have debug enabled in config.php
-*/
-else if($res instance of \stdClass)
-{
-  //print the error
-   $block->outputDebug(true); 
-}
+    //this is an example of how to check if a user is block
+    $username = 'someone@example.com'
+    $res = $block->isBlock($username);
+    
+    if($res===true)
+    {
+      echo "No hacking allowed";
+    }
+    else if($res===false)
+    {
+      echo "This user is not block :-) "
+    }
+    
+    /**
+    *You wont need to do this line if you have debug enabled in config.php
+    */
+    else if($res instance of \stdClass)
+    {
+      //print the error
+       $block->outputDebug(true); 
+    }
 ```
 
 Remember that it is important to call out to the library as follows:
